@@ -22,7 +22,34 @@ https://github.com/jcobb/basic-jquery-slider
 })(jQuery);
 ```
 
-```
+```js
+jQuery(document).ready(function($) {
+  
+  $('#banner-slide').bjqs({
+    animtype : 'slide',
+    height : 320,
+    width : 620,
+    responsive : true,
+    randomstart : true
+  });
+});
+
+jQuery(function($) {
+  
+  $('.secret-source').secretSource({
+    includeTag: false
+  });
+});
+
+jQuery(document).ready(function($) {
+  
+  $('#banner-fade').bjqs({
+    height : 320,
+    width : 620,
+    responsive : true
+  });
+  
+});
 ```
 
 ```
